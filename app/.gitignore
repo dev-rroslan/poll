@@ -1,0 +1,76 @@
+# Byte-compiled Python files
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Django-specific
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+
+# IDE/editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.vs/
+*.swp
+*.swo
+
+# macOS files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Testing
+.pytest_cache/
+.coverage
+.tox/
+htmlcov/
+.nox/
+
+# Docker
+docker-compose.override.yml
+.dockerenv
+
+# Other
+*.bak
+*.tmp
+*.pid
+*.seed
+*.log
+*.tmp
