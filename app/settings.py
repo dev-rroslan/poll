@@ -76,8 +76,9 @@ WSGI_APPLICATION = 'app.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-from dotenv import load_dotenv
 import os
+from dotenv import load_dotenv # type: ignore
+
 
 load_dotenv()  # Load environment variables from .env
 

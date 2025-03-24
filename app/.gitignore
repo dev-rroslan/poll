@@ -73,4 +73,5 @@ docker-compose.override.yml
 *.pid
 *.seed
 *.log
-*.tmp
+*.
+myvenv
