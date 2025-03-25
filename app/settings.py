@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'app.wsgi.application'
 
 import os
 from dotenv import load_dotenv # type: ignore
-
+os.getenv('RESEND')
 
 load_dotenv()  # Load environment variables from .env
 
@@ -134,3 +134,8 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+RESEND_SMTP_PORT = 587
+RESEND_SMTP_USERNAME = 'resend'
+RESEND_SMTP_HOST = 'smtp.resend.com'
