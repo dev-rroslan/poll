@@ -1,4 +1,11 @@
 from .base import *
+import os
+from dotenv import load_dotenv # type: ignore
+os.getenv('RESEND')
+
+ALLOWED_HOST = ['http://127.0.0.1:8000']
+
+DEBUG=True
 
 DATABASES = {
     'default': {
@@ -9,4 +16,7 @@ DATABASES = {
         'HOST': os.getenv('DB_DEV_HOST'),
         'PORT': os.getenv('DB_DEV_PORT'),
     }
-}
+}   
+SESSION_COOKIE_SECURE = False
+CSRF_COOKIE_SECURE = False
+SECURE_SSL_REDIRECT = False
